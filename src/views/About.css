@@ -1,0 +1,18 @@
+.about-page-img {
+    width: 50rem;
+    display: flex;
+   justify-content: end;
+  
+}
+.container-about{
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+body{
+    background-color: #F2F2F2;
+
+   
+}
