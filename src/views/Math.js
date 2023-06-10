@@ -5,17 +5,17 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
-export const SubjectComponent = () => {
+export const MathComponent = () => {
   
 
   return (
     <>
-    <h1>Subject</h1>
+    <h1>Math</h1>
      
     </>
   );
 };
 
-export default withAuthenticationRequired(SubjectComponent, {
+export default withAuthenticationRequired(MathComponent, {
   onRedirecting: () => <Loading />,
 });

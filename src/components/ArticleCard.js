@@ -1,21 +1,33 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+import { Link } from 'react-router-dom';
+{/* <div className='border border-dark p-3'>
+  <h1>Articles</h1>
+  <div>
+    <p className='font-italic'>The MathPool team shares their best articles to read on topics
+       like mathematics creativity, productivity and more. Ready to dive in? </p>
+  </div>
+
+  </div> */}
 
 const ArticleCard = () => {
   return (
-    <div><div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">Articles</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-     
-    </div>
-  </div></div>
+    <Card className='m-5'>
+    <Card.Img variant="top" src="https://abakcus.com/wp-content/uploads/2021/10/How-to-Remember-What-You-Read-Article-Abakcus-1536x1024.jpg" />
+    <Card.Body>
+      <Card.Title>Article</Card.Title>
+      <Card.Text>
+  The MathPool team shares their best articles 
+  to read on topics like mathematics creativity, productivity and more. Ready to dive in? 
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+       <div className="p-3"> <Link to="/article-api">
+          <button className="btn-quiz bg-warning text-dark p-2">Read Here</button>
+        </Link></div>
+    </Card.Footer>
+  </Card>
   )
 }
 

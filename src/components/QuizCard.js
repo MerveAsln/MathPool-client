@@ -1,17 +1,23 @@
 import React from 'react'
-
-const QuizCard = () => {
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
+{/* <div className='br-3 '><div><img className='' src='https://e0.pxfuel.com/wallpapers/72/1010/desktop-wallpaper-math-background-thumbnail.jpg'>
+</img></div>
+<div className=''><button className='q-btn '>Quiz Here</button></div>
+</div> */}
+const AskQuestionCard = () => {
   return (
-    <div><div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Ask Question here</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div></div>
+    <Card className='m-5'>
+        <Card.Img variant="top" src="https://abakcus.com/wp-content/uploads/2021/02/David-Hilberts-23-Problems-500x500.jpg.webp" />
+      
+        <Card.Footer>
+        <div className="p-3"> <Link to="/quiz">
+          <button className="btn-quiz bg-warning text-dark p-2">Quiz Here</button>
+        </Link></div>
+        </Card.Footer>
+      </Card>
   )
 }
 
-export default QuizCard
+export default AskQuestionCard
